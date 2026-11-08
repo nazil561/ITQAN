@@ -6,7 +6,7 @@ services:
       POSTGRES_PASSWORD: ethno
       POSTGRES_DB: ethnosynergy
     ports: ["5432:5432"]
-    volumes: ["pgdata:/var/lib/postgresql/data"]
+    volumes: ["ethnosynergy_pgdata:/var/lib/postgresql/data"]
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U ethno -d ethnosynergy"]
       interval: 5s
@@ -40,4 +40,5 @@ services:
       redis: { condition: service_healthy }
 
 volumes:
-  pgdata:
+  ethnosynergy_pgdata:
+    external: true

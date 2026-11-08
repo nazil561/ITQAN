@@ -1,5 +1,6 @@
 "use client";
 
+import { ExportProtocolButton } from "@/components/export-protocol-button";
 import { ArrowLeft, ArrowRight, Sparkles } from "lucide-react";
 import Link from "next/link";
 import { useParams } from "next/navigation";

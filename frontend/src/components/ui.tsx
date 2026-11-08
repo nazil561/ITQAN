@@ -103,7 +103,7 @@ export function Section({
   className?: string;
 }) {
   return (
-    <section data-reveal="" className={`mb-10 sm:mb-12 ${className}`}>
+    <section data-reveal="" suppressHydrationWarning className={`mb-10 sm:mb-12 ${className}`}>
       <div className="mb-4 flex flex-wrap items-end justify-between gap-2">
         <div>
           <h2 className="font-display text-[clamp(26px,2.6vw,36px)] leading-tight">{title}</h2>
